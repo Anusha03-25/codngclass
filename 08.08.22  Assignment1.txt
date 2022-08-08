@@ -1,0 +1,38 @@
+#include<stdio.h>
+void main()
+{
+    int n,r,ecount=0,ocount=0;
+	printf("Enter number n:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        r=n%10;
+        if(r%2==0)
+        {
+            ecount=ecount+1;
+        }
+        else
+        {
+            ocount=ocount+1;
+        }
+        n=n/10;
+    }
+        if(ecount==ocount)
+        {
+            printf("Fancy Number");
+        }
+        else
+        {
+            printf("Not Fancy Number");
+        }
+}
+
+Input1:
+Enter number n:123456
+Output1:
+Fancy Number
+
+Input2:
+Enter number n:12345
+Output2:
+Not Fancy Number
